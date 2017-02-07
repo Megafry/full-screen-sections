@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Full Screen Section</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./Resources/CSS/Style.css" media="all">
+</head>
+<body>
+	<main>
+	<section class="section1 section_cover section_darck_bg">
+		<a href="#" class="next-section">next</a>
+		<div class="container">
+				<div class="table-container table-content">
+					<div class="table-content text-center">
+						<h1>Full Screen Section</h1>
+						<hr>
+							<p>Easy and nice</p>
+							<a href="#" class="btn">More<a>
+					</div>
+				</div>
+		</div>
+	</section>
+
+	<section class="section2 ">
+		<a href="#" class="next-section">next</a>
+		<div class="container">
+			<div class="table-container table-content">
+				<div class="table-content text-center">
+				<h2>Do you like animation ?</h2>
+				<p>
+					am erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				</p>
+				<hr>
+				<p>
+						Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimat
+				</p>
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<section class="section_fixed_bg section-half-4">
+		<a href="#" class="next-section">next</a>
+		<div class="container">
+			<div class="table-container table-content">
+				<div class="table-content text-center">
+
+
+						<img class="img-circle" src="https://avatars0.githubusercontent.com/u/10438940?v=3&amp;s=350">
+						<p>@megafry</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="">
+		<a href="#" class="next-section">next</a>
+		<div class="container">
+			<div class="img-half">
+				<div>
+					<div style="background-image: url(./Resources/Images/megafry_photo_2.jpg);"></div>
+				</div>
+				<div>
+					<div style="background-image: url(./Resources/Images/megafry_photo_4.jpg);"></div>
+				</div>
+			</div>
+
+			<div class="img-half">
+				<div>
+					<div style="background-image: url(./Resources/Images/megafry_photo_3.jpg);"></div>
+				</div>
+				<div>
+					<div style="background-image: url(./Resources/Images/megafry_photo_1.jpg);"></div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="section2">
+		<a href="#" class="next-section">next</a>
+		<div class="container">
+
+			<div class="table-container table-content">
+				<div class="table-content text-center">
+				<h2>Footer</h2>
+				<hr>
+				<p>
+						Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimat
+				</p>
+			</div>
+		</div>
+
+		</div>
+	</section>
+
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+		function scrollTo(el){
+			$('html, body').animate({
+				 scrollTop: el.offset().top
+		 }, 500);
+		}
+
+
+		$(".next-section").on("click", function(){
+			var section = $(this).closest("section");
+			scrollTo(section);
+			return false;
+
+		});
+
+
+
+	});
+</script>
+
+
+
+</body>
+
+</html>
